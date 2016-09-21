@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Pregunta 6</title>
+</head>
+<body>
+
+<!--Se pide crear una página donde se encuentre sólo un div y dentro de éste se encuentre una lista ordenada
+con 3 elementos en la lista, "Elemento 1", "Elemento 2" y "Elemento 3".
+Programar que al hacer click sobre el div se cree un elemento de la lista consecutivo(en este caso "Elemento 4
+" y así sucesivamente), pero que al hacer click sobre un elemento "li", NO se cree el elemento consecutivo-->
+
+<div id="el_div" style="background-color:green">
+	<ol Id="el_OL">
+		<li style="background-color:red" value="1">1</li>
+		<li style="background-color:red" value="2">2</li>
+		<li style="background-color:red" value="3">3</li>
+	</ol>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+
+	$("#el_div").on("click",function(){
+			$("#el_OL").append("<li>"+4+"</li>");
+		
+	})
+</script>
+
+</body>
+</html>
