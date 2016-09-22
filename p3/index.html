@@ -10,32 +10,7 @@ En una sala de clases hay alumnos, cada alumno tiene notas y un promedio final. 
 Crear la función constructora alumno que recibe el nombre de éste y un arreglo con las notas
 La función constructora debe revisar que el nombre sea un string y que el arreglo de notas sean integers
 Crear el método promedio que devuelva el promedio de notas de todos los alumnos.-->
-<script type="text/javascript">
-
-var notas = [];
-	
-function Alumnos(nombre,notas){
-	this.nombre = nombre;	
-	this.notas = notas;
-	this.promedio_final = 0;
-	this.nombre = function(objeto){
-		if (typeof(this.nombre) == stringValue)
-			alert("el nombre no es un string");
-	}		
-	this.mipromedio = function(){
-		var sum = 0
-		var j = 0;
-		for (var i = 0; i < this.notas.length; i++) {
-			sum = sum + this.notas[i];
-		}
-		promedio_final = sum/this.notas.length;
-		return(promedio_final);
-	}
-}
-
-var Alvaro = new Alumnos("Alvaro",[1,2,3]);
-
-</script>
+<script type="text/javascript" src="main.js"></script>
 
 </body>
 </html>

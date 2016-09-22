@@ -3,6 +3,12 @@
 <head>
 <meta charset="utf-8">
 	<title>Pregunta 6</title>
+
+<style type="text/css">
+	li{
+		background-color: red;
+	}
+</style>
 </head>
 <body>
 
@@ -13,21 +19,15 @@ Programar que al hacer click sobre el div se cree un elemento de la lista consec
 
 <div id="el_div" style="background-color:green">
 	<ol Id="el_OL">
-		<li style="background-color:red" value="1">1</li>
-		<li style="background-color:red" value="2">2</li>
-		<li style="background-color:red" value="3">3</li>
+		<li value="1">1</li>
+		<li value="2">2</li>
+		<li value="3">3</li>
 	</ol>
 </div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script type="text/javascript">
-
-	$("#el_div").on("click",function(){
-			$("#el_OL").append("<li>"+4+"</li>");
-		
-	})
-</script>
+<script type="text/javascript" src="main.js"></script>
 
 </body>
 </html>
